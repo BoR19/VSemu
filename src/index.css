@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --vscode-bg: #1e1e1e;
+    --vscode-sidebar-bg: #252526;
+    --vscode-activity-bg: #333333;
+    --vscode-header-bg: #2d2d2d;
+    --vscode-border: #3c3c3c;
+    --vscode-active-blue: #007acc;
+    --vscode-hover-blue: #1177bb;
+    --vscode-text: #cccccc;
+    --vscode-text-muted: #858585;
+    --vscode-text-bright: #ffffff;
+    --vscode-accent: #0e639c;
+    --vscode-error: #f14c4c;
+    --vscode-warning: #cca700;
+    --vscode-success: #89d185;
+    --vscode-info: #3794ff;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--vscode-bg);
+    color: var(--vscode-text);
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom VS Code Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(121, 121, 121, 0.4);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.7);
+}
+
+/* Device screen notch & phone frame utility styles */
+.device-shadow {
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.device-bezel {
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.8);
+}

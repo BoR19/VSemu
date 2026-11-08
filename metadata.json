@@ -1,0 +1,6 @@
+{
+  "name": "PWA Studio Preview",
+  "description": "Herramienta profesional para visualizar, probar y depurar Progressive Web Apps (PWA) en dispositivos virtuales y Android real desde VS Code.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
